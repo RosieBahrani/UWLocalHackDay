@@ -1,0 +1,39 @@
+The team fusion used pre-existed softwares to simulate and improve automation 
+in vehicles. They worked with two research groups successively: the Generative 
+Software Development(GSD) Lab and the Autonomous Vehicle (Wave) Lab. In GSD 
+Lab, they developed Autonomous Driving Assistance Systems(ADAS) including 
+Adaptive Cruise Control(ACC) and Lane Keeping Assist(LKA). The assistance 
+system control the cruise state of the vehicle based on the distance between 
+the car in front of it and itself. In order to avoid bad configuration, they 
+developed an algorithm to determine the steering angle using image processing.
+They employed softwares Prescan, Matlab and Simulink in the above process, 
+but they also found out that full automation is more desirable. They chose 
+to work with the WAVE Lab, and keep working on the real-scale simulation. Many 
+softwares they planned to use are limited because of prices and versions, so 
+they developed a bridge between PreScan and ROS using Java. They reimplemented 
+ACC on ROS in the wave lab. 
+
+Revised:
+The automation in vehicles is one of the most popular research areas in recent 
+years, literally every country wants to take the lead. Autonomous vehicles can 
+help prevent traffic accidents and free up people's time. Team Fusion aims for 
+developing Autonomous Driving Assistance Systems and improving full-scale 
+simulation.
+
+Team Fusion worked with two research groups: the Generative Software 
+Development(GSD) Lab and the Autonomous Vehicle (Wave) Lab. They first 
+developed Autonomous Driving Assistance Systems(ADAS). The Adaptive Cruise 
+Control(ACC) modifies the cruise state of the vehicle based on the distance 
+between the car in front of it and itself. For the Lane Keeping Assist(LKA), 
+they developed an algorithm to determine the steering angle using image 
+processing to avoid bad configuration.
+
+They found that full automation is more desirable, so they started working 
+with the WAVE Lab. Many softwares they planned to use are limited because of 
+prices and versions, so they wrote their own code in Java to connect PreScan 
+and ROS. They reimplemented ACC on ROS in the wave lab. 
+
+Overall, they built the Autonomous Driving Assistance Systems(ADAS) including 
+Adaptive Cruise Control(ACC) and Lane Keeping Assist(LKA) and developed a 
+bridge between PreScan and ROS using Java.
+
