@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <script src="base64.js"></script>
 <title>Let us begin!</title>
 <style>
 	{margin: 0; padding:0;}
@@ -23,24 +24,38 @@
 	<br>	
     <u> Let us begin!!</u>
     </font>
+  
     <br><br><br>
     <img src ="speech.jpg" width= "250" height= "150">	
     <img src ="arrow.png" width= "150" height= "75">
     <img src ="words.jpg" width= "250" height= "150">
     <br><br>
-    <form>
+    
       <font face = "arial" size="100" color="Orange">	
       Enter link to the video :  
-      <input type="text" name="Fname" size="100">
-      <br><br><br>
-
+      <input type="text" Id="text1" size="100">
+      <br>
+      <button onclick="WriteToFile()">submit</button><br>
       Enter the word to be searched :  
-      <input type="text" name="Fname" size="50"> 
+      <input type="text" Id="text2" size="50"> <br>
+      <button onclick="WriteToFile2()">submit</button>
       </font> 
-    </form>
+</H1>  
+      <script type="text/javascript">
+      function WriteToFile() {
+        var firstName = document.getElementById('text1').value;
+        console.log(firstName);
+        window.location.href="data:application/octet-stream;base64,"+Base64.encode(firstName);
+      }
+      function WriteToFile2(){
+        var secondName = document.getElementById('text2').value;
+        console.log(secondName);
+        window.location.href="data:application/octet-stream;base64,"+Base64.encode(secondName);
+      }
+      </script>
 
 	
-	</H1>	
+		
 </body>
 
 </html>	
